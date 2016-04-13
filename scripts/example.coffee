@@ -8,6 +8,8 @@
 #
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
+{Response} = require 'hubot'
+
 module.exports = (robot) ->
   
   robot.hear /getting chilly/i, (res) ->
