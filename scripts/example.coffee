@@ -34,6 +34,7 @@ module.exports = (robot) ->
         }
       }
     }
+    res.send "Hello?"
 
 
   robot.hear /badger/i, (res) ->
