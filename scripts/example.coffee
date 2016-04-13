@@ -71,8 +71,8 @@ module.exports = (robot) ->
       
   robot.on "fb_richMsg", (envelope) -> 
     res = new Response robot, envelope, undefined
-      res.envelope.fb.richMsg = envelope.event.message
-      res.send()
+    res.envelope.fb.richMsg = envelope.event.message
+    res.send()
 
   robot.hear /gif/i, (res) ->
     res.send "https://d13yacurqjgara.cloudfront.net/users/329021/screenshots/2584879/dribbble-slice.gif"
