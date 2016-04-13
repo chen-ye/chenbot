@@ -63,8 +63,9 @@ module.exports = (robot) ->
     res.send()
     
   robot.on "postback", (envelope) -> 
+    res = new Response robot, envelope, undefined
     if envelope.payload is "send_ok_face"
-      robot.send envelope, "http://wallpaper.ultradownloads.com.br/275633_Papel-de-Parede-Meme-Okay-Face_1600x1200.jpg"
+      res.send "http://wallpaper.ultradownloads.com.br/275633_Papel-de-Parede-Meme-Okay-Face_1600x1200.jpg"
 
   robot.hear /gif/i, (res) ->
     res.send "https://d13yacurqjgara.cloudfront.net/users/329021/screenshots/2584879/dribbble-slice.gif"
