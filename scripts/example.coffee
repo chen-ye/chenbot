@@ -34,6 +34,7 @@ module.exports = (robot) ->
         }
       }
     }
+    res.send "Brr"
 
   robot.hear /gif/i, (res) ->
     res.send "https://d13yacurqjgara.cloudfront.net/users/329021/screenshots/2584879/dribbble-slice.gif"
