@@ -43,6 +43,7 @@ module.exports = (robot) ->
           type: "template",
           payload: {
             template_type: "button",
+            text: "Responding?"
             buttons: [
               {
                 type: "web_url",
@@ -59,7 +60,7 @@ module.exports = (robot) ->
         }
       }
     }
-    res.send "Responding?"
+    res.send
 
   robot.hear /gif/i, (res) ->
     res.send "https://d13yacurqjgara.cloudfront.net/users/329021/screenshots/2584879/dribbble-slice.gif"
