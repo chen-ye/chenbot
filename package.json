@@ -18,7 +18,7 @@
     "hubot-scripts": "^2.16.2",
     "hubot-shipit": "^0.2.0",
     "hubot-slack": "^3.4.2",
-    "hubot-fb": "https://github.com/chen-ye/hubot-fb/archive/master.tar"
+    "hubot-fb": "chen-ye/hubot-fb"
   },
   "engines": {
     "node": "0.10.x"
