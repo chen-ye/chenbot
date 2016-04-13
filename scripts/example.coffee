@@ -68,6 +68,11 @@ module.exports = (robot) ->
     res = new Response robot, envelope, undefined
     if envelope.payload is "send_ok_face"
       res.send "http://wallpaper.ultradownloads.com.br/275633_Papel-de-Parede-Meme-Okay-Face_1600x1200.jpg"
+      
+  robot.on "fb_richMsg", (envelope) -> 
+    res = new Response robot, envelope, undefined
+      res.envelope.fb.richMsg = envelope.event.message
+      res.send()
 
   robot.hear /gif/i, (res) ->
     res.send "https://d13yacurqjgara.cloudfront.net/users/329021/screenshots/2584879/dribbble-slice.gif"
