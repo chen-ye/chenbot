@@ -25,9 +25,12 @@ module.exports = (robot) ->
                 title: "Yes"
               },
               {
-                type: "web_url",
+                type: "postback",
                 title: "No",
-                url: "http://wallpaper.ultradownloads.com.br/275633_Papel-de-Parede-Meme-Okay-Face_1600x1200.jpg"
+                payload: {
+                  id: "send_msg",
+                  msg: "http://wallpaper.ultradownloads.com.br/275633_Papel-de-Parede-Meme-Okay-Face_1600x1200.jpg" 
+                }
               }
             ]
           }
@@ -61,6 +64,10 @@ module.exports = (robot) ->
       }
     }
     res.send()
+    
+  robot.on "postback", (envelope) -> 
+    if envelope.payload.id = "send_msg"
+      robot.send envelope [envelope.payload.msg]
 
   robot.hear /gif/i, (res) ->
     res.send "https://d13yacurqjgara.cloudfront.net/users/329021/screenshots/2584879/dribbble-slice.gif"
