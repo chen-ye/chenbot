@@ -72,7 +72,9 @@ module.exports = (robot) ->
   robot.on "fb_richMsg", (envelope) -> 
     res = new Response robot, envelope, undefined
     res.envelope.fb = {
-      richMsg: envelope.event.message
+      richMsg: {
+        attachment: envelope.attachments[0]
+      }
     }
     res.send()
 
