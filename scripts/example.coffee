@@ -64,7 +64,7 @@ module.exports = (robot) ->
     }
     res.send()
     
-  robot.on "postback", (envelope) -> 
+  robot.on "fb_postback", (envelope) -> 
     res = new Response robot, envelope, undefined
     if envelope.payload is "send_ok_face"
       res.send "http://wallpaper.ultradownloads.com.br/275633_Papel-de-Parede-Meme-Okay-Face_1600x1200.jpg"
