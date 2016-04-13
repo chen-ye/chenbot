@@ -8,6 +8,7 @@
     "hubot": "^2.18.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-fb": "chen-ye/hubot-fb",
+    "hubot-chunkify": "chen-ye/hubot-chunkify",
     "hubot-google-images": "^0.2.6",
     "hubot-google-translate": "^0.2.0",
     "hubot-help": "^0.1.3",
