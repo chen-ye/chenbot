@@ -11,7 +11,7 @@
 module.exports = (robot) ->
   
   robot.hear /getting chilly/i, (res) ->
-    res.envelope.fb: {
+    res.envelope.fb = {
       richMsg: {
         attachment: {
           type: "template",
