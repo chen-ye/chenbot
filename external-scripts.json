@@ -10,5 +10,5 @@
   "hubot-rules",
   "hubot-shipit",
   "hubot-chunkify",
-  "hubot-heroku-deploy-notifier"
+  "hubot-calculator"
 ]

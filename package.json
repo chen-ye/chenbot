@@ -6,6 +6,7 @@
   "description": "Testing FB Messenger Bots",
   "dependencies": {
     "hubot": "^2.18.0",
+    "hubot-calculator": "^0.4.0",
     "hubot-chunkify": "chen-ye/hubot-chunkify",
     "hubot-diagnostics": "0.0.1",
     "hubot-fb": "chen-ye/hubot-fb",
